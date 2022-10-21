@@ -109,11 +109,22 @@ def add_cupcake_dictionary(file,cupcake):
         writer = csv.DictWriter(csvfile,fieldnames=fieldnames)
         writer.writerow(cupcake)    
     
-    
+# def delete_cupcake_dictionary(file,cupcake):
+#     lines =()
+#     with open(file, 'r') as readFile:
+#         reader=csv.reader(readFile)
+#         for row in reader:
+#             lines.append(row)
+#             for field in row:
+#                 if field == cupcake:
+#                     lines.remove(row)    
   
-    
+#     with open('order.csv','w') as writeFile:
+#         writer = csv.writer(writeFile)
+#     writer.writerows(lines)
 
 cupcake4 = Mini("Banana_cream", 3.99, "Banana", "Cream")
+
 
 
 
@@ -133,7 +144,7 @@ cupcake_list = [
     cupcake3
 ]       
         
-add_cupcake("order.csv", cupcake4)
+# add_cupcake("order.csv", cupcake4)
 
 
 

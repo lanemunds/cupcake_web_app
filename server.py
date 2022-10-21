@@ -1,7 +1,7 @@
 from unicodedata import name
 from flask import Flask, render_template, url_for, redirect
 app = Flask(__name__)
-from cupcakes import get_cupcakes, find_cupcake, add_cupcake_dictionary
+from cupcakes import  get_cupcakes, find_cupcake, add_cupcake_dictionary
 
 
 
@@ -30,6 +30,17 @@ def add_cupcake(name):
         return redirect(url_for("all_cupcakes"))
     else:
         return "Sorry cupcake not found."    
+# @app.route("/delete-cupcake/<name>")
+# def delete_cupcake(name):
+#     cupcake = find_cupcake("order.csv", name)
+
+    
+        
+       
+
+
+
+
 
 if __name__ == "__main__":
     app.env = "development"

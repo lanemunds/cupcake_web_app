@@ -13,6 +13,7 @@
     <a href="http://localhost:8000">Home</a>
 </header>
 <body>
+    <section>
     <h1>Menu</h1>
     {% for cupcake in cupcakes%}
 <h3>{{cupcake["name"]}}</h3>
@@ -22,7 +23,11 @@
 <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
     <button>Add to Cart</button>
 </a>
+<a href="/cupcake_individual/{{cupcake['name']}}">
+    <button>See Info</button>
+</a>
     {%endfor%}
 
+</section>
 </body>
 </html>

@@ -1,5 +1,6 @@
 body {
     background-color: aquamarine;
+    
 }
 
 h1 {
@@ -7,6 +8,8 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 40pt;
+    background-color: black;
+
 }
 .hello{
     color: white;
@@ -30,4 +33,15 @@ h3{
     text-decoration: underline;
     font-size: 20pt;
     color: fuchsia;
+}
+
+button {
+    background-color: blueviolet;
+    color: aquamarine;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
