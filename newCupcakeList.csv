@@ -1,9 +1,5 @@
 size,name,price,flavor,frosting,sprinkles,filling
 regular,Stars and Stripes,2.99,Vanilla,Vanilla,"['Red', 'White', 'Blue']",
 mini,Oreo,0.99,Chocolate,Cookies and Cream,['Oreo pieces'],
-large,Red Velvet,3.99,Red Velvet,Cream Cheese,[],
-mini,banana cream,0.99,banana,cream,[],
-mini,banana cream,0.99,banana,cream,[],
-mini,banana cream,0.99,banana,cream,[],
-mini,banana cream,0.99,banana,cream,[],
-mini,banana cream,0.99,banana,cream,[],
+large,Red_Velvet,3.99,Red Velvet,Cream Cheese,[],
+mini,banana_cream,0.99,banana,cream,[],

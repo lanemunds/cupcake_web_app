@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="/static/index.css">
 </head>
 <body>
-    <h1>Order page</h1>
+    <header>
+        <a href="http://localhost:8000/cupcakes">Menu</a>
+        <a href="http://localhost:8000/order">Shopping Cart</a>
+        <a href="http://localhost:8000">Home</a>
+    </header>
+    <h1>Shopping Cart</h1>
+    {% for cupcake in cupcakes%}
+    <h3>{{cupcake["name"]}}</h3>
+    <h4>Flavor: {{cupcake["flavor"]}} </h4>
+    <h4>Frosting: {{cupcake["frosting"]}} </h4>
+    <h4><b>Price: {{cupcake["price"]}} </b></h4>
+    
+        {%endfor%}
 </body>
 </html>

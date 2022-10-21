@@ -4,7 +4,30 @@ body {
 
 h1 {
     color: fuchsia;
+    display: flex;
+    justify-content: center;
+    font-size: 40pt;
 }
 .hello{
     color: white;
+}
+
+header{
+    background-color: gold;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+a{
+    padding: 5px;
+    font-size: 25pt;
+}
+
+h3{
+    text-decoration: underline;
+    font-size: 20pt;
+    color: fuchsia;
 }

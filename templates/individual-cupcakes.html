@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="/static/index.css">
 </head>
 <body>
+    <header>
+        <a href="http://localhost:8000/cupcakes">Menu</a>
+        <a href="http://localhost:8000/order">Shopping Cart</a>
+        <a href="http://localhost:8000">Home</a>
+    </header>
     <h1 class="hello">Individual Cupcake Page</h1>
+    <h1>Menu</h1>
+    
+<h3>{{cupcake["name"]}}</h3>
+<h4>Flavor: {{cupcake["flavor"]}} </h4>
+<h4>Frosting: {{cupcake["frosting"]}} </h4>
+<h4><b>Price: {{cupcake["price"]}} </b></h4>
+<a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
+    <button>Add to Cart</button>
+</a>
+
 </body>
 </html>
